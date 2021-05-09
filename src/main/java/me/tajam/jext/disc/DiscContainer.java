@@ -36,13 +36,13 @@ public class DiscContainer {
   }
   public static final Material BASEDISC_MATERIAL = Material.MUSIC_DISC_11;
 
-  private String title;
-  private String author;
-  private String namespaceID;
-  private int customModelData;
+  private final String title;
+  private final String author;
+  private final String namespaceID;
+  private final int customModelData;
   private boolean creeperDrop;
-  private ArrayList<String> lores;
-  private Material material;
+  private final ArrayList<String> lores;
+  private final Material material;
 
   public DiscContainer(ConfigDiscData configDiscData) {
     this.title = configDiscData.getName();

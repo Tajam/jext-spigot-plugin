@@ -14,7 +14,7 @@ public class ParameterLocation extends Parameter {
     X, Y, Z
   }
 
-  private Axis axis;
+  private final Axis axis;
 
   ParameterLocation(boolean required, Axis axis) {
     super(required);
@@ -37,18 +37,18 @@ public class ParameterLocation extends Parameter {
     final Location location = block.getLocation();
     switch(axis) {
       case X: {
-        Integer a = location.getBlockX();
-        suggestions.add(a.toString());
+        int a = location.getBlockX();
+        suggestions.add(Integer.toString(a));
         break;
       }
       case Y: {
-        Integer a = location.getBlockY();
-        suggestions.add(a.toString());
+        int a = location.getBlockY();
+        suggestions.add(Integer.toString(a));
         break;
       }
       case Z: {
-        Integer a = location.getBlockZ();
-        suggestions.add(a.toString());
+        int a = location.getBlockZ();
+        suggestions.add(Integer.toString(a));
         break;
       }
       default:

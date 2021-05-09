@@ -6,7 +6,7 @@ public class SpigotVersion {
   
   private static SpigotVersion instance;
 
-  private String version;
+  private final String version;
 
   public SpigotVersion(JavaPlugin plugin) {
     this.version = plugin.getServer().getBukkitVersion().substring(0, 4);

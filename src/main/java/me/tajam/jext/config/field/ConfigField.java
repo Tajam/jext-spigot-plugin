@@ -6,7 +6,7 @@ import org.bukkit.configuration.ConfigurationSection;
 
 public class ConfigField<T> {
 
-  private String path;
+  private final String path;
   private T data;
 
   public ConfigField(String path, T defaultData) {

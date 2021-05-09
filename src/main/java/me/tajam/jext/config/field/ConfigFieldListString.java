@@ -8,7 +8,7 @@ import me.tajam.jext.Log;
 
 public class ConfigFieldListString implements ConfigFieldList<String> {
 
-  private String path;
+  private final String path;
   private ArrayList<String> data;
 
   public ConfigFieldListString(String path, ArrayList<String> defaultData) {

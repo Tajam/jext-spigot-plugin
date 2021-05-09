@@ -59,7 +59,7 @@ class ExecutorStopMusic extends ExecutorAdapter {
         new Log().info().t("Stopped all music.").send(player);
     }
     
-    final Integer playerCount = players.size();
+    final int playerCount = players.size();
     if (playerCount >= 2) {
       new Log().warn().t("Stopped music for ").o().t(" players!").send(sender, playerCount);
     } else if (playerCount == 1) {

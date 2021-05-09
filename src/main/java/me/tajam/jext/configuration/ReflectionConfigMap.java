@@ -18,8 +18,8 @@ import me.tajam.jext.configuration.ConfigUtil.MarkAsConfigObject;
 
 public class ReflectionConfigMap {
 
-  private Field mapField;
-  private Object instance;
+  private final Field mapField;
+  private final Object instance;
   private Class<?> keyClass;
   private Class<?> valueClass;
 

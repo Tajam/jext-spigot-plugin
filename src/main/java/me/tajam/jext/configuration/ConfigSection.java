@@ -12,7 +12,7 @@ import me.tajam.jext.configuration.ConfigUtil.MarkAsConfigSection;
 
 public class ConfigSection extends Configuration {
 
-  private Class<?> clazz;
+  private final Class<?> clazz;
 
   public ConfigSection(Class<?> clazz, ConfigurationSection section) {
     this(clazz, section, null);

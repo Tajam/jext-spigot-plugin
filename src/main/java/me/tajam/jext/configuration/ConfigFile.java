@@ -10,8 +10,8 @@ import me.tajam.jext.configuration.ConfigUtil.MarkAsConfigFile;
 
 public class ConfigFile extends Configuration {
 
-  private File file;
-  private ConfigSection mainSection;
+  private final File file;
+  private final ConfigSection mainSection;
 
   public ConfigFile(Class<?> clazz, JavaPlugin plugin) throws InvalidClassException {
     if (!clazz.isAnnotationPresent(MarkAsConfigFile.class)) {

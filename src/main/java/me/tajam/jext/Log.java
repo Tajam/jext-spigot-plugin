@@ -13,9 +13,9 @@ import org.bukkit.entity.Player;
 
 public class Log {
 
-  private String title;
+  private final String title;
   private ChatColor themeColor;
-  private List<Token> tokens;
+  private final List<Token> tokens;
 
   public Log(String title) {
     this.tokens = new ArrayList<>();
@@ -383,18 +383,18 @@ public class Log {
   }
 
   private String constructMessage(Queue<Object> parameters) {
-    String message = "";
+    StringBuilder message = new StringBuilder();
     for (Token token : tokens) {
-      message += token.toString(parameters);
+      message.append(token.toString(parameters));
     }
-    return message;
+    return message.toString();
   }
 
-  private class Token {
+  private static class Token {
 
-    private String message;
-    private ChatColor color;
-    private boolean parameter;
+    private final String message;
+    private final ChatColor color;
+    private final boolean parameter;
 
     private Token(String message, ChatColor color, boolean parameter) {
       this.message = message;

@@ -18,10 +18,10 @@ public enum JextNamespace {
     }
   }
 
-  private String key;
+  private final String key;
   private NamespacedKey namespacedKey;
 
-  private JextNamespace(String key) {
+  JextNamespace(String key) {
     this.key = key;
     this.namespacedKey = null;
   }

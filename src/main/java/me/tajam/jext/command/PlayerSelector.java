@@ -38,9 +38,9 @@ class PlayerSelector {
     return SELECTOR_SYMBOL_MAP.keySet();
   }
 
-  private CommandSender sender;
+  private final CommandSender sender;
   private Selector mode;
-  private String selector;
+  private final String selector;
 
   PlayerSelector(CommandSender sender, String selector) {
     this.sender = sender;
