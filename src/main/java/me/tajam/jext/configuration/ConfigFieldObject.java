@@ -9,9 +9,9 @@ import me.tajam.jext.Log;
 
 public class ConfigFieldObject extends ConfigField {
 
-  private ReflectionConfigMap configMap;
-  private ConfigurationSection section;
-  private String fieldName;
+  private final ReflectionConfigMap configMap;
+  private final ConfigurationSection section;
+  private final String fieldName;
 
   public ConfigFieldObject(Field field, ConfigurationSection section, Object instance) {
     super(field, section, instance);

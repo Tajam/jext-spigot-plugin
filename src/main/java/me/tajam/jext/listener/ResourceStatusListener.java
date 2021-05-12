@@ -12,7 +12,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 class ResourceStatusListener implements Listener {
 
-  private JavaPlugin plugin;
+  private final JavaPlugin plugin;
 
   public ResourceStatusListener(JavaPlugin plugin) {
     this.plugin = plugin;

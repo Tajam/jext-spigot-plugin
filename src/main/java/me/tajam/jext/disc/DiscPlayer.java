@@ -13,7 +13,7 @@ public class DiscPlayer {
   private static final double JUKEBOX_RANGE_MULTIPLY = 16.0;
   private static final float JUKEBOX_VOLUME = 4.0f;
 
-  private String namespace;
+  private final String namespace;
   private float volume;
   private float pitch;
 
@@ -38,6 +38,7 @@ public class DiscPlayer {
   }
 
   public void play(Location location) {
+    location = location.add(0.5, 0.5, 0.5);
     World world = location.getWorld();
     ConfigManager manager = ConfigManager.getInstance();
     if (!manager.getBooleanData(ConfigData.BooleanData.Path.ALLOW_OVERLAP)) {

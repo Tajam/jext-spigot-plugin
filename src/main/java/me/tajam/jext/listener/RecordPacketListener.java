@@ -32,7 +32,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 class RecordPacketListener extends PacketAdapter {
 
   public RecordPacketListener(Plugin plugin, ListenerPriority priority) {
-    super(plugin, priority, new PacketType[] { PacketType.Play.Server.WORLD_EVENT });
+    super(plugin, priority, PacketType.Play.Server.WORLD_EVENT);
   }
 
   @Override

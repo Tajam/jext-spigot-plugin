@@ -5,10 +5,10 @@ import org.bukkit.entity.Player;
 
 public class LocationParser {
 
-  private String stringX;
-  private String stringY;
-  private String stringZ;
-  private Player sender;
+  private final String stringX;
+  private final String stringY;
+  private final String stringZ;
+  private final Player sender;
 
   public LocationParser(String stringX, String stringY, String stringZ, Player sender) throws IllegalStateException {
     this.stringX = stringX;

@@ -10,7 +10,7 @@ public class DiscPersistentDataContainer {
 
   private final String IDENTIFIER = "JEXT";
 
-  private PersistentDataContainer container;
+  private final PersistentDataContainer container;
 
   public DiscPersistentDataContainer(ItemMeta meta) {
     this.container = meta.getPersistentDataContainer();

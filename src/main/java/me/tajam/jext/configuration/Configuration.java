@@ -7,7 +7,7 @@ import java.util.List;
 public abstract class Configuration implements Configurable {
   
   private Configuration parent;
-  private List<Configurable> childs;
+  private final List<Configurable> childs;
   private int level;
 
   public Configuration() {

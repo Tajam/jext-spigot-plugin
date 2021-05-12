@@ -17,8 +17,8 @@ import me.tajam.jext.disc.DiscContainer;
 
 public class CreeperDeathListener implements Listener {
 
-  private List<DiscContainer> droppableDiscs = new ArrayList<>();
-  private Random generator = new Random();
+  private final List<DiscContainer> droppableDiscs = new ArrayList<>();
+  private final Random generator = new Random();
 
   public CreeperDeathListener() {
     final ConfigDiscManager configDiscManager = ConfigDiscManager.getInstance();

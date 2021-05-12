@@ -6,8 +6,8 @@ import org.bukkit.configuration.ConfigurationSection;
 
 public interface ConfigFieldList<T> {
 
-  public String getPath();
-  public ArrayList<T> getData();
-  public void updateData(ConfigurationSection section);
+  String getPath();
+  ArrayList<T> getData();
+  void updateData(ConfigurationSection section);
 
 }

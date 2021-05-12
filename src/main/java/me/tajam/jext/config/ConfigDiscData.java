@@ -20,11 +20,11 @@ public class ConfigDiscData {
 
   }
 
-  private String name;
-  private HashMap<Path, ConfigField<String>> stringMap;
-  private HashMap<Path, ConfigField<Integer>> integerMap;
-  private HashMap<Path, ConfigField<Boolean>> booleanMap;
-  private ConfigFieldListString lores;
+  private final String name;
+  private final HashMap<Path, ConfigField<String>> stringMap;
+  private final HashMap<Path, ConfigField<Integer>> integerMap;
+  private final HashMap<Path, ConfigField<Boolean>> booleanMap;
+  private final ConfigFieldListString lores;
 
   public ConfigDiscData(String name) {
 

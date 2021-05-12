@@ -1,10 +1,6 @@
 package me.tajam.jext.configuration;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import me.tajam.jext.configuration.ConfigUtil.*;
 
@@ -45,14 +41,14 @@ public final class ConfigYmlvLatest {
     DiscData disc_0 = new DiscData();
     disc_0.AUTHOR = "C148";
     disc_0.CREEPER_DROP = true;
-    disc_0.LORE = Arrays.asList("Minecraft originals");
+    disc_0.LORE = Collections.singletonList("Minecraft originals");
     disc_0.MODEL_DATA = 0;
     disc_0.TITLE = "Cat";
 
     DiscData disc_1 = new DiscData();
     disc_1.AUTHOR = "C148";
     disc_1.CREEPER_DROP = true;
-    disc_1.LORE = Arrays.asList("Minecraft originals");
+    disc_1.LORE = Collections.singletonList("Minecraft originals");
     disc_1.MODEL_DATA = 0;
     disc_1.TITLE = "Stal";
 

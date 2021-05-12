@@ -42,7 +42,7 @@ class ExecutorDiscGive extends ExecutorAdapter {
       new Log().info().t("Received ").p().t(" disc.").send(player, disc);
     }
 
-    final Integer playerCount = players.size();
+    final int playerCount = players.size();
     if (playerCount >= 2) {
       new Log().warn().t("Given ").o().t(" disc to ").o().t(" players!").send(sender, disc, playerCount);
     } else if (playerCount == 1) {
