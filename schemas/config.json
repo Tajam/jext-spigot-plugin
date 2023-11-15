@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "type": "string",
+      "enum": [
+        "auto",
+        "custom",
+        "silent",
+        "ar_sa",
+        "cs_cz",
+        "da_dk",
+        "de_de",
+        "el_gr",
+        "en_us",
+        "es_es",
+        "fi_fi",
+        "fr_fr",
+        "it_it",
+        "ja_jp",
+        "nl_nl",
+        "no_no",
+        "pl_pl",
+        "pt_br",
+        "pt_pt",
+        "ro_ro",
+        "ru_ru",
+        "sv_se",
+        "uk_ua",
+        "zh_cn"
+      ]
+    },
+    "force-resource-pack": {
+      "type": "boolean"
+    },
+    "ignore-failed-download": {
+      "type": "boolean"
+    },
+    "allow-music-overlapping": {
+      "type": "boolean"
+    },
+    "allow-metrics": {
+      "type": "boolean"
+    },
+    "jukebox-behaviour": {
+      "type": "string",
+      "enum": ["vanilla", "legacy-gui", "gui"]
+    },
+    "discs-random-chance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "disc-loottables-limit": {
+      "type": "object",
+      "discs/*": { "type": "integer" },
+      "chests/ancient_city": { "type": "integer" },
+      "chests/ancient_city_ice_box": { "type": "integer" },
+      "chests/bastion_bridge": { "type": "integer" },
+      "chests/bastion_hoglin_treasure": { "type": "integer" },
+      "chests/bastion_other": { "type": "integer" },
+      "chests/bastion_treasure": { "type": "integer" },
+      "chests/desert_pyramid": { "type": "integer" },
+      "chests/end_city_treasure": { "type": "integer" },
+      "chests/igloo_chest": { "type": "integer" },
+      "chests/jungle_temple": { "type": "integer" },
+      "chests/nether_bridge": { "type": "integer" },
+      "chests/ruined_portal": { "type": "integer" },
+      "chests/shipwreck_map": { "type": "integer" },
+      "chests/shipwreck_supply": { "type": "integer" },
+      "chests/shipwreck_treasure": { "type": "integer" },
+      "chests/stronghold_corridor": { "type": "integer" },
+      "chests/stronghold_crossing": { "type": "integer" },
+      "chests/underwater_ruin_big": { "type": "integer" },
+      "chests/underwater_ruin_small": { "type": "integer" },
+      "chests/village/village_plains_house": { "type": "integer" },
+      "chests/village/village_savanna_house": { "type": "integer" },
+      "chests/village/village_desert_house": { "type": "integer" },
+      "chests/village/village_snowy_house": { "type": "integer" },
+      "chests/village/village_taiga_house": { "type": "integer" },
+      "chests/woodland_mansion": { "type": "integer" },
+      "chests/abandoned_mineshaft": { "type": "integer" },
+      "chests/simple_dungeon": { "type": "integer" },
+      "chests/pillager_outpost": { "type": "integer" }
+    },
+    "fragments-random-chance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "fragment-lottables-limit": {
+      "type": "object",
+      "discs/*": { "type": "integer" },
+      "chests/ancient_city": { "type": "integer" },
+      "chests/ancient_city_ice_box": { "type": "integer" },
+      "chests/bastion_bridge": { "type": "integer" },
+      "chests/bastion_hoglin_treasure": { "type": "integer" },
+      "chests/bastion_other": { "type": "integer" },
+      "chests/bastion_treasure": { "type": "integer" },
+      "chests/desert_pyramid": { "type": "integer" },
+      "chests/end_city_treasure": { "type": "integer" },
+      "chests/igloo_chest": { "type": "integer" },
+      "chests/jungle_temple": { "type": "integer" },
+      "chests/nether_bridge": { "type": "integer" },
+      "chests/ruined_portal": { "type": "integer" },
+      "chests/shipwreck_map": { "type": "integer" },
+      "chests/shipwreck_supply": { "type": "integer" },
+      "chests/shipwreck_treasure": { "type": "integer" },
+      "chests/stronghold_corridor": { "type": "integer" },
+      "chests/stronghold_crossing": { "type": "integer" },
+      "chests/underwater_ruin_big": { "type": "integer" },
+      "chests/underwater_ruin_small": { "type": "integer" },
+      "chests/village/village_plains_house": { "type": "integer" },
+      "chests/village/village_savanna_house": { "type": "integer" },
+      "chests/village/village_desert_house": { "type": "integer" },
+      "chests/village/village_snowy_house": { "type": "integer" },
+      "chests/village/village_taiga_house": { "type": "integer" },
+      "chests/woodland_mansion": { "type": "integer" },
+      "chests/abandoned_mineshaft": { "type": "integer" },
+      "chests/simple_dungeon": { "type": "integer" },
+      "chests/pillager_outpost": { "type": "integer" }
+    }
+  },
+  "required": [
+    "lang",
+    "force-resource-pack",
+    "ignore-failed-download",
+    "allow-music-overlapping",
+    "allow-metrics",
+    "jukebox-behaviour",
+    "disc-loottables-limit",
+    "fragment-loottables-limit"
+  ]
+}

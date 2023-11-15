@@ -1,0 +1,36 @@
+{
+  // Schema (do not change, it adds autocompletion to this file)
+  "$schema": "https://raw.githubusercontent.com/spartacus04/jext-reborn/master/schemas/config.json",
+
+  "lang": "auto",
+
+  "jukebox-behaviour": "vanilla",
+
+  "jukebox-gui-style": "scroll-vertical",
+
+  "jukebox-gui-size": 96,
+
+  "disable-music-overlap": true,
+
+  "disc-loottables-limit": {},
+
+  "fragment-loottables-limit": {},
+
+  "check-for-updates": true,
+
+  "allow-metrics": true,
+
+  "force-resource-pack": false,
+
+  "enable-resource-pack-host": true,
+
+  "resource-pack-sha1": "",
+
+  "web-interface-port": 8080,
+
+  "web-interface-api-enabled": true,
+
+  "web-interface-password": "",
+
+  "discs-data-loading": "resource-pack"
+}
